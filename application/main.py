@@ -48,7 +48,7 @@ dropzone = Dropzone(application)
 # application.config['DROPZONE_PARALLEL_UPLOADS'] = 3
 
 DEVELOPMENT = os.environ.get('environment', 'production').lower() == 'development'
-
+DEVELOPMENT = True
 
 if not DEVELOPMENT and os.path.exists("/version"):
     PIPELINE_POSTFIX = "." + open("/version").read().strip()

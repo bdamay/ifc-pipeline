@@ -31,6 +31,7 @@ choice = lambda seq: SystemRandom().choice(seq)
 letter_set = set(string.ascii_letters)
 
 STORAGE_DIR = os.environ.get("MODEL_DIR", tempfile.gettempdir()) 
+STORAGE_DIR = '.\\tmp'
 
 def generate_id():
     return "".join(choice(string.ascii_letters) for i in range(32))

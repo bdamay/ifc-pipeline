@@ -34,6 +34,8 @@ import os
 
 DEVELOPMENT = os.environ.get('environment', 'production').lower() == 'development'
 
+DEVELOPMENT = True  # forcing to True outside
+
 if DEVELOPMENT:
     engine = create_engine('sqlite:///ifc-pipeline.db', connect_args={'check_same_thread': False})
 else:

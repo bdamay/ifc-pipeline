@@ -17,6 +17,6 @@ certbot/certbot \
 certonly --standalone \
 --register-unsafely-without-email --agree-tos \
 --cert-name host \
-$domain
+'localhost'
 
 # sudo openssl dhparam -out $PWD/certbot/dh-param/dhparam-2048.pem 2048
